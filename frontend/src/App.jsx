@@ -1,6 +1,20 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import UserDetailsPage from "./pages/UserDetailsPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
+import "./App.css";
 
-const App = () => <div>Hello..</div>;
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path='/users' element={<HomePage />} />
+        <Route path='/users/:id' element={<UserDetailsPage />} />
+        <Route path='*' element={<NotFoundPage />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;

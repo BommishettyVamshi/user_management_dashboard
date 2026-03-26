@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a frontend-only for **User Mangement**, built using **React.js**. It allows users to view, filter, and explore user details in a clean and responsive interface.
+This project is a frontend-only for **User Management**, built using **React.js**. It allows users to view, filter, and explore user details in a clean and responsive interface.
 
 The application follows a clean, scalable architecture using **pages**, **components**, **hooks**, **services** and **utils**.
 
@@ -19,15 +19,21 @@ The application follows a clean, scalable architecture using **pages**, **compon
 user_management_dashboard/
 |--- frontend/
 |    |---src/
-|    |   |--- components/     # Reusable UI components
-|    |   |--- pages/          # Page-level components
-|    |   |--- services/       # API calls
-|    |   |--- utils/          # Helper functions or constants
-|    |   |--- hooks/          # Custom hooks     
-|    |   |--- App.jsx         # Main app component          
-|    |   |--- main.jsx        # Entry point
+|    |   |--- components/                        # Reusable UI components
+|    |   |
+|    |   |--- pages/                             # Page-level components
+|    |   |    |
+|    |   |    |--- HomePage/                     # Displays the All user details for '/' route
+|    |   |    |--- UserDetailsPage/              # Displays the specific user details '/users/id' route
+|    |   |    |--- NotFoundPage/                 # Displays not found msg for invalid routes
+|    |   |    
+|    |   |--- services/                          # API calls
+|    |   |--- utils/                             # Helper functions or constants
+|    |   |--- hooks/                             # Custom hooks     
+|    |   |--- App.jsx                            # Main app component          
+|    |   |--- main.jsx                           # Entry point
 |    |
-|    |--- index.html          # root html
+|    |--- index.html                             # root html
 |    |---.gitignore
 |    |--- package.json
 |    
@@ -56,14 +62,47 @@ http://localhost:5173/
 ```
 
 ## API Used
-```
+
+**BaseUrl:**
+``` 
 https://jsonplaceholder.typicode.com/users
 
 ```
 
 ---
 
+## Pages
+
+### HomePage
+
+**Route:**
+```
+    BaseUrl/
+```
+
+**Description:** 
+
+* Displays all users details and allows users to view , filter and explore 
+
+### UserDetailsPage
+**Route:**
+```
+  BaseUrl/:userId
+```
+**Description:**
+* Contains the specific user (userId) details
+
+### NotFoundPage
+**Route:**
+- Any undefined Route
+
+**Description:**
+* Displays a message for invalid or non-existing routes
+
+---
+
 ## Notes
 * This is a frontend-only project
 * Uses a public API for user data
-* This project is still in intial setup phase.
+* Page routing is implemented and verified
+* Components and full UI implementation will be added in future phases
