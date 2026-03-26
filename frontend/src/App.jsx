@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/users' element={<HomePage />} />
-        <Route path='/users/:id' element={<UserDetailsPage />} />
+        <Route path='/users/:userId' element={<UserDetailsPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </Router>

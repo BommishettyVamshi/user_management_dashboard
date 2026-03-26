@@ -20,6 +20,9 @@ user_management_dashboard/
 |--- frontend/
 |    |---src/
 |    |   |--- components/                        # Reusable UI components
+|    |   |    |--- NavBarComponent/              # navbar component used in home page
+|    |   |    |--- UserComponent/                # user component for user details in home page
+|    |   |    |--- SearchBarComponent            # search component for handling search input and filters
 |    |   |
 |    |   |--- pages/                             # Page-level components
 |    |   |    |
@@ -27,9 +30,9 @@ user_management_dashboard/
 |    |   |    |--- UserDetailsPage/              # Displays the specific user details '/users/id' route
 |    |   |    |--- NotFoundPage/                 # Displays not found msg for invalid routes
 |    |   |    
-|    |   |--- services/                          # API calls
 |    |   |--- utils/                             # Helper functions or constants
-|    |   |--- hooks/                             # Custom hooks     
+|    |   |--- hooks/                             # Custom hooks (api calls)
+|    |   |    |--- useUsers.js                   # custom hook to handle the users fetching
 |    |   |--- App.jsx                            # Main app component          
 |    |   |--- main.jsx                           # Entry point
 |    |
@@ -101,8 +104,24 @@ https://jsonplaceholder.typicode.com/users
 
 ---
 
+## Components
+
+### NavBarComponent
+* Displays the nav content in the home page
+
+### SearchBarComponent
+* Displays the search and filter inputs and handles the onChange events
+
+### UserComponnet
+* Displays the User Bio Shortly in home page
+
 ## Notes
 * This is a frontend-only project
 * Uses a public API for user data
 * Page routing is implemented and verified
-* Components and full UI implementation will be added in future phases
+* Components and full UI implemented and verified
+
+
+## Author
+
+### Vamshi Bommishetty

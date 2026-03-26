@@ -1,0 +1,82 @@
+.user-details-page{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
+
+.user-details-heading{
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1d1b1b;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.user-bio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eef0f9;
+}
+
+.user-bio-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-address{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eef0f9;
+}
+
+.heading{
+    color: #1d1b1b; 
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;    
+}
+
+.user-company{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eef0f9;
+}
+
+.user-website{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eef0f9;
+}
+
+@media screen and (min-width: 768px) {
+    .user-details-page{
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .user-bio, .user-address, .user-company, .user-website {
+        width: 48%;
+    }
+}

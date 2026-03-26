@@ -1,0 +1,9 @@
+.details-link {
+    text-align: center;
+    cursor: pointer;
+    color: #1d1b1b;
+}
+
+.details-link:hover {
+    color: #121314;
+}
